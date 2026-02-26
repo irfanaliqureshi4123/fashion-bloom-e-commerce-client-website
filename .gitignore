@@ -34,6 +34,10 @@ upload/*
 # Config files with sensitive data
 config/config.php
 
+# Database backups with real data (keep local only)
+database/fashion_bloom.sql
+database/*.sql.bak
+
 # Session files
 sessions/
 
