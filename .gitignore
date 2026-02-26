@@ -1,0 +1,42 @@
+# Dependencies
+vendor/
+node_modules/
+composer.lock
+
+# Environment variables
+.env
+.env.local
+.env.*.local
+
+# IDE & editor
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Logs
+*.log
+logs/
+
+# Temporary files
+tmp/
+temp/
+*.cache
+
+# Upload directories (keep structure but ignore contents)
+uploads/*
+!uploads/.gitkeep
+upload/*
+!upload/.gitkeep
+
+# Config files with sensitive data
+config/config.php
+
+# Session files
+sessions/
+
+# OS files
+Thumbs.db
+.DS_Store

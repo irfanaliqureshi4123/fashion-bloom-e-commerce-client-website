@@ -1,0 +1,155 @@
+/* Color Utility Classes */
+
+/* Text Colors */
+.text-primary {
+    color: var(--primary-color);
+}
+
+.text-secondary {
+    color: var(--secondary-color);
+}
+
+.text-accent {
+    color: var(--accent-color);
+}
+
+.text-white {
+    color: var(--white);
+}
+
+.text-dark {
+    color: var(--text-primary);
+}
+
+.text-gray {
+    color: var(--text-secondary);
+}
+
+.text-light-gray {
+    color: var(--text-light);
+}
+
+.text-error {
+    color: var(--error-color);
+}
+
+.text-success {
+    color: var(--success-color);
+}
+
+.text-warning {
+    color: var(--warning-color);
+}
+
+/* Background Colors */
+.bg-primary {
+    background-color: var(--primary-color);
+}
+
+.bg-secondary {
+    background-color: var(--secondary-color);
+}
+
+.bg-accent {
+    background-color: var(--accent-color);
+}
+
+.bg-white {
+    background-color: var(--white);
+}
+
+.bg-dark {
+    background-color: var(--text-primary);
+}
+
+.bg-light {
+    background-color: var(--accent-color);
+}
+
+.bg-error {
+    background-color: var(--error-color);
+}
+
+.bg-error-light {
+    background-color: rgba(255, 107, 107, 0.1);
+}
+
+.bg-success {
+    background-color: var(--success-color);
+}
+
+.bg-success-light {
+    background-color: rgba(81, 207, 102, 0.1);
+}
+
+.bg-warning {
+    background-color: var(--warning-color);
+}
+
+.bg-warning-light {
+    background-color: rgba(255, 212, 59, 0.1);
+}
+
+/* Border Colors */
+.border-primary {
+    border-color: var(--primary-color);
+}
+
+.border-secondary {
+    border-color: var(--secondary-color);
+}
+
+.border-light {
+    border-color: var(--border-color);
+}
+
+.border-error {
+    border-color: var(--error-color);
+}
+
+.border-success {
+    border-color: var(--success-color);
+}
+
+.border-warning {
+    border-color: var(--warning-color);
+}
+
+/* Gradients */
+.gradient-primary {
+    background: linear-gradient(135deg, var(--primary-color) 0%, #b8941f 100%);
+}
+
+.gradient-secondary {
+    background: linear-gradient(135deg, var(--secondary-color) 0%, #333 100%);
+}
+
+.gradient-accent {
+    background: linear-gradient(135deg, var(--accent-color) 0%, #f0f0f0 100%);
+}
+
+/* Opacity Colors */
+.bg-primary-light {
+    background-color: rgba(212, 175, 55, 0.1);
+}
+
+.bg-primary-lighter {
+    background-color: rgba(212, 175, 55, 0.05);
+}
+
+.bg-dark-light {
+    background-color: rgba(51, 51, 51, 0.1);
+}
+
+/* Color Overlays */
+.overlay-dark {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.overlay-light {
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+.overlay-primary {
+    background-color: rgba(212, 175, 55, 0.8);
+}

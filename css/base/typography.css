@@ -1,0 +1,141 @@
+/* Typography Styles */
+
+/* Google Fonts Import - Poppins font family with multiple weights */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+/* Heading Hierarchy - Largest to smallest with appropriate weights and line heights */
+h1 {
+    font-size: var(--font-size-4xl);
+    font-weight: 700;
+    line-height: 1.1;
+    letter-spacing: -0.5px;
+    margin-bottom: 1rem;
+    color: var(--text-primary);
+}
+
+h2 {
+    font-size: var(--font-size-3xl);
+    font-weight: 700;
+    line-height: 1.2;
+    letter-spacing: -0.3px;
+    margin-bottom: 1rem;
+    color: var(--text-primary);
+}
+
+h3 {
+    font-size: var(--font-size-2xl);
+    font-weight: 700;
+    line-height: 1.3;
+    letter-spacing: -0.2px;
+    margin-bottom: 0.8rem;
+    color: var(--text-primary);
+}
+
+h4 {
+    font-size: var(--font-size-xl);
+    font-weight: 600;
+    line-height: 1.4;
+    margin-bottom: 0.8rem;
+    color: var(--text-primary);
+}
+
+h5 {
+    font-size: var(--font-size-lg);
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    color: var(--text-primary);
+}
+
+h6 {
+    font-size: var(--font-size-base);
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 0.5rem;
+    color: var(--text-secondary);
+}
+
+/* Base Paragraph Styling */
+p {
+    font-size: var(--font-size-base);
+    line-height: 1.7;
+    color: var(--text-secondary);
+    margin-bottom: 1rem;
+    font-weight: 400;
+}
+
+/* Small Text Utility */
+small {
+    font-size: var(--font-size-sm);
+    color: var(--text-light);
+}
+
+/* Text Color Utilities */
+.text-muted {
+    color: var(--text-light);
+}
+
+.text-primary {
+    color: var(--primary-color);
+    font-weight: 600;
+}
+
+.text-secondary {
+    color: var(--text-secondary);
+}
+
+.text-success {
+    color: var(--success-color);
+}
+
+.text-error {
+    color: var(--error-color);
+}
+
+/* Text Alignment Utilities */
+.text-center {
+    text-align: center;
+}
+
+.text-left {
+    text-align: left;
+}
+
+.text-right {
+    text-align: right;
+}
+
+/* Text Transform Utilities */
+.text-uppercase {
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.text-lowercase {
+    text-transform: lowercase;
+}
+
+.text-capitalize {
+    text-transform: capitalize;
+}
+
+/* Font Weight Utilities */
+.font-light {
+    font-weight: var(--fw-light);
+}
+
+.font-normal {
+    font-weight: var(--fw-normal);
+}
+
+.font-medium {
+    font-weight: var(--fw-medium);
+}
+
+.font-semibold {
+    font-weight: var(--fw-semibold);
+}
+
+.font-bold {
+    font-weight: var(--fw-bold);
+}

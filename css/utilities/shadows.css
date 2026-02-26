@@ -1,0 +1,130 @@
+/* Shadow Utility Classes */
+
+/* Box Shadows */
+.shadow-none {
+    box-shadow: none;
+}
+
+.shadow-sm {
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+}
+
+.shadow {
+    box-shadow: var(--shadow);
+}
+
+.shadow-md {
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+.shadow-lg {
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+.shadow-xl {
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+
+.shadow-2xl {
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+}
+
+.shadow-inner {
+    box-shadow: inset 0 2px 4px 0 rgba(0, 0, 0, 0.06);
+}
+
+/* Hover Shadows */
+.shadow-hover {
+    box-shadow: var(--shadow-hover);
+}
+
+.shadow-deep {
+    box-shadow: var(--shadow-deep);
+}
+
+/* Text Shadows */
+.text-shadow-sm {
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.text-shadow {
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.text-shadow-md {
+    text-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.text-shadow-lg {
+    text-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Colored Shadows */
+.shadow-primary {
+    box-shadow: 0 10px 30px rgba(212, 175, 55, 0.3);
+}
+
+.shadow-error {
+    box-shadow: 0 10px 30px rgba(255, 107, 107, 0.3);
+}
+
+.shadow-success {
+    box-shadow: 0 10px 30px rgba(81, 207, 102, 0.3);
+}
+
+.shadow-warning {
+    box-shadow: 0 10px 30px rgba(255, 212, 59, 0.3);
+}
+
+/* Raised Shadows (3D effect) */
+.shadow-raised {
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+
+.shadow-raised-md {
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+
+.shadow-raised-lg {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+}
+
+/* Drop Shadows */
+.shadow-drop {
+    filter: drop-shadow(0 4px 6px rgba(0, 0, 0, 0.1));
+}
+
+.shadow-drop-md {
+    filter: drop-shadow(0 10px 15px rgba(0, 0, 0, 0.1));
+}
+
+.shadow-drop-lg {
+    filter: drop-shadow(0 20px 25px rgba(0, 0, 0, 0.15));
+}
+
+/* Transition with Shadows */
+.shadow-transition {
+    transition: box-shadow var(--transition);
+}
+
+.hover\:shadow-hover:hover {
+    box-shadow: var(--shadow-hover);
+}
+
+.hover\:shadow-lg:hover {
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+}
+
+/* Focus Shadows */
+.focus\:shadow-md:focus {
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+.focus\:shadow-lg:focus {
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+}
+
+/* Active Shadows */
+.active\:shadow-inner:active {
+    box-shadow: inset 0 2px 4px 0 rgba(0, 0, 0, 0.06);
+}

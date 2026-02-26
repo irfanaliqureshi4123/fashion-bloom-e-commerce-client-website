@@ -1,0 +1,155 @@
+═══════════════════════════════════════════════════════════════
+FASHION BLOOM - INSTALLATION & SETUP REQUIREMENTS
+═══════════════════════════════════════════════════════════════
+
+📋 WHAT YOU NEED TO INSTALL ON YOUR COMPUTER:
+
+1. PHP (Programming Language)
+   👉 Install PHP version 7.4 or higher (8.0+ is better)
+   Link: https://www.php.net/downloads
+
+2. MySQL Database (Store your data here)
+   👉 Install MySQL 5.7+ or MariaDB 10.2+
+   Link: https://www.mysql.com/downloads
+   OR use XAMPP (it includes both PHP & MySQL)
+   Link: https://www.apachefriends.org/
+
+3. Apache Web Server (Runs the website)
+   👉 Install Apache 2.4+ 
+   (Usually comes with XAMPP - easiest option!)
+
+═══════════════════════════════════════════════════════════════
+
+🔧 PHP ADD-ONS NEEDED (Usually pre-installed):
+
+✓ PDO MySQL         - Connects to database
+✓ Sessions          - Remembers user login
+✓ cURL              - Talks to external services
+✓ OpenSSL           - Secure connections
+✓ JSON              - Handles data format
+
+═══════════════════════════════════════════════════════════════
+
+💳 ONLINE ACCOUNTS YOU NEED TO CREATE:
+
+1. STRIPE (Payment System)
+   👉 Sign up at: https://stripe.com
+   👉 Get your "Secret Key" and "Public Key"
+   👉 This lets customers pay with credit cards
+
+2. EMAIL ACCOUNT (Send verification emails)
+   👉 Use Gmail or any email provider
+   👉 Get these details:
+      - Email address
+      - Email password (or app password)
+      - SMTP details (usually provided by your email provider)
+
+═══════════════════════════════════════════════════════════════
+
+🗂️ HOW TO INSTALL - STEP BY STEP:
+
+STEP 1: Install XAMPP (easiest!)
+   ➜ Download from: https://www.apachefriends.org/
+   ➜ Install it on your computer
+   ➜ Start Apache & MySQL from XAMPP Control Panel
+
+STEP 2: Get Project Files
+   ➜ Copy the "fashion_bloom" folder
+   ➜ Paste into: C:\xampp\htdocs\
+
+STEP 3: Create Database
+   ➜ Open: http://localhost/phpmyadmin
+   ➜ Create a new database (name: fashion_bloom)
+   ➜ Ask admin for database backup to import tables
+
+STEP 4: Create Configuration File
+   ➜ Create a file named: .env (in fashion_bloom folder)
+   ➜ Add these lines (replace YOUR_VALUES):
+
+      DB_HOST=localhost
+      DB_NAME=fashion_bloom
+      DB_USER=root
+      DB_PASSWORD=
+
+      STRIPE_PUBLIC_KEY=YOUR_STRIPE_PUBLIC_KEY
+      STRIPE_SECRET_KEY=YOUR_STRIPE_SECRET_KEY
+
+      SMTP_HOST=smtp.gmail.com
+      SMTP_PORT=587
+      SMTP_USERNAME=your_email@gmail.com
+      SMTP_PASSWORD=your_app_password
+      SMTP_FROM_EMAIL=noreply@fashionbloom.com
+
+STEP 5: Create Upload Folders
+   ➜ Create these folders in fashion_bloom:
+      - /upload
+      - /uploads
+      - /assets/images
+
+STEP 6: Test
+   ➜ Open browser: http://localhost/fashion_bloom
+   ➜ Should see the website!
+
+═══════════════════════════════════════════════════════════════
+
+⚙️ IMPORTANT SETTINGS:
+
+📁 Folder Permissions:
+   - /upload folder: Must be writable
+   - /uploads folder: Must be writable
+   - .env file: Keep private (not readable by public)
+
+📸 Image Processing:
+   - GD library must be enabled in PHP
+   - Supports: JPG, PNG images
+
+📤 File Upload:
+   - Max size: At least 10MB allowed
+
+═══════════════════════════════════════════════════════════════
+
+🧪 BEFORE YOU LAUNCH:
+
+✓ Check that Apache is running
+✓ Check that MySQL is running
+✓ Database is created with tables
+✓ .env file has correct credentials
+✓ Test login/register works
+✓ Test payment system (Stripe)
+✓ Test email verification works
+
+═══════════════════════════════════════════════════════════════
+
+❓ COMMON PROBLEMS & SOLUTIONS:
+
+Problem: "Database connection failed"
+→ Check DB_HOST, DB_USER, DB_PASSWORD in .env file
+→ Make sure MySQL is running
+
+Problem: "Emails not sending"
+→ Check SMTP details in .env
+→ Verify email password/app password is correct
+→ Try Gmail app password instead of regular password
+
+Problem: "Can't upload images"
+→ Check /upload & /uploads folders exist
+→ Make sure folders are writable
+→ Check image size (should be under 10MB)
+
+Problem: "Payment not working"
+→ Check Stripe keys in .env
+→ Go to Stripe dashboard and verify keys
+→ Make sure you have test mode enabled
+
+═══════════════════════════════════════════════════════════════
+
+🌐 BROWSERS THAT WORK:
+
+✓ Google Chrome (Latest)
+✓ Firefox (Latest)
+✓ Safari (Latest)
+✓ Edge (Latest)
+
+Works on: Phone, Tablet, Computer
+
+═══════════════════════════════════════════════════════════════

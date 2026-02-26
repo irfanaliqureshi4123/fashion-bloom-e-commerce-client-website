@@ -1,0 +1,126 @@
+/* Form Component Styles */
+
+/* Form Group - Container for form fields with labels */
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+    color: var(--text-primary);
+    font-size: 0.95rem;
+}
+
+/* Form Input Elements - Base styling for all form inputs */
+.form-group input,
+.form-group textarea,
+.form-group select {
+    width: 100%;
+    padding: 0.8rem 1rem;
+    border: 1px solid var(--border-color);
+    border-radius: var(--border-radius);
+    font-size: 0.95rem;
+    color: var(--text-primary);
+    background-color: var(--white);
+    transition: var(--transition);
+    box-sizing: border-box;
+}
+
+/* Form Focus States - Highlight focused inputs */
+.form-group input:focus,
+.form-group textarea:focus,
+.form-group select:focus {
+    outline: none;
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 3px rgba(212, 175, 55, 0.1); /* Subtle focus ring */
+}
+
+/* Textarea Specific Styling */
+.form-group textarea {
+    resize: vertical; /* Allow vertical resize only */
+    min-height: 120px;
+}
+
+/* Placeholder Text Styling */
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+    color: var(--text-light);
+}
+
+/* Error State Styling */
+.form-error {
+    border-color: var(--error-color) !important;
+}
+
+.error-message {
+    color: var(--error-color);
+    font-size: 0.85rem;
+    margin-top: 0.25rem;
+}
+
+.success-message {
+    color: var(--success-color);
+    font-size: 0.85rem;
+    margin-top: 0.25rem;
+}
+
+/* Form Row - Side-by-side form fields */
+.form-row {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+}
+
+.form-row .form-group {
+    margin-bottom: 0; /* Override default margin in grid */
+}
+
+/* Checkbox and Radio Inputs */
+.form-check {
+    margin-bottom: 1rem;
+}
+
+.form-check input {
+    width: auto; /* Don't stretch checkboxes */
+    margin-right: 0.5rem;
+    cursor: pointer;
+}
+
+.form-check label {
+    display: inline; /* Inline with checkbox */
+    margin-bottom: 0;
+    cursor: pointer;
+    font-weight: 400; /* Normal weight for check labels */
+}
+
+/* Responsive Form Layout - Tablet */
+@media (max-width: 768px) {
+    .form-row {
+        grid-template-columns: 1fr; /* Stack fields vertically */
+        gap: 1rem;
+    }
+
+    .form-group input,
+    .form-group textarea {
+        padding: 0.7rem 0.8rem; /* Slightly smaller padding */
+    }
+}
+
+/* Responsive Form Layout - Mobile */
+@media (max-width: 480px) {
+    .form-group {
+        margin-bottom: 1rem; /* Smaller spacing on mobile */
+    }
+
+    .form-group input,
+    .form-group textarea {
+        padding: 0.6rem 0.8rem;
+        font-size: 0.9rem;
+    }
+
+    .form-group label {
+        font-size: 0.85rem;
+    }
+}

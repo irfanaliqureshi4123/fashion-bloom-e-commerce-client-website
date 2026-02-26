@@ -1,0 +1,284 @@
+/* Policy Pages Styling - Premium Gold/Black Theme */
+
+:root {
+    --gold-primary: #d4af37;
+    --gold-light: #f3e5ab;
+    --gold-dark: #b4941f;
+    --black-primary: #222;
+    --text-dark: #333;
+    --text-muted: #666;
+    --bg-light: #f9f9f9;
+    --glass-bg: rgba(255, 255, 255, 0.95);
+    --glass-border: rgba(212, 175, 55, 0.2);
+    --shadow-soft: 0 4px 15px rgba(0, 0, 0, 0.05);
+    --shadow-hover: 0 8px 25px rgba(212, 175, 55, 0.15);
+    --policy-hero-bg: linear-gradient(135deg, #111 0%, #333 100%);
+    --gradient-gold: linear-gradient(135deg, #d4af37 0%, #b4941f 100%);
+}
+
+/* Page Container & Typography */
+.policy-page {
+    background-color: var(--bg-light);
+    min-height: 100vh;
+    font-family: 'Poppins', sans-serif;
+}
+
+.policy-hero {
+    background: var(--policy-hero-bg);
+    color: white;
+    padding: 80px 20px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.policy-hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: radial-gradient(circle at center, rgba(212, 175, 55, 0.1) 0%, transparent 70%);
+}
+
+.policy-hero h1 {
+    font-size: 2.8rem;
+    margin-bottom: 1rem;
+    font-weight: 700;
+    color: var(--gold-primary);
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.policy-hero p {
+    font-size: 1.2rem;
+    color: rgba(255, 255, 255, 0.9);
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.policy-content-wrapper {
+    max-width: 900px;
+    margin: -40px auto 60px;
+    padding: 0 20px;
+    position: relative;
+    z-index: 2;
+}
+
+.section-title {
+    font-size: 1.8rem;
+    color: var(--black-primary);
+    margin-bottom: 2rem;
+    margin-top: 3rem;
+    font-weight: 600;
+    text-align: center;
+    position: relative;
+    display: inline-block;
+    width: 100%;
+}
+
+.section-title::after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 3px;
+    background: var(--gold-primary);
+    margin: 10px auto 0;
+    border-radius: 2px;
+}
+
+/* Card Components */
+.policy-card {
+    background: var(--glass-bg);
+    border: 1px solid var(--glass-border);
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    padding: 2rem;
+    box-shadow: var(--shadow-soft);
+    transition: all 0.3s ease;
+    height: 100%;
+}
+
+.policy-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-hover);
+    border-color: var(--gold-primary);
+}
+
+.policy-card-icon {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    display: inline-block;
+}
+
+.policy-card h3 {
+    color: var(--black-primary);
+    font-size: 1.2rem;
+    margin-bottom: 0.8rem;
+    font-weight: 600;
+}
+
+.policy-card p {
+    color: var(--text-muted);
+    font-size: 0.95rem;
+    line-height: 1.6;
+    margin: 0;
+}
+
+/* Grids */
+.grid-2 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.grid-3 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+}
+
+.grid-4 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1.5rem;
+}
+
+/* Custom Lists */
+.policy-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.policy-list li {
+    position: relative;
+    padding-left: 25px;
+    margin-bottom: 1rem;
+    color: var(--text-muted);
+    line-height: 1.6;
+}
+
+.policy-list li::before {
+    content: '•';
+    color: var(--gold-primary);
+    font-weight: bold;
+    font-size: 1.5rem;
+    position: absolute;
+    left: 0;
+    top: -5px;
+}
+
+/* Alerts and Highlights */
+.policy-alert {
+    padding: 1.5rem;
+    border-radius: 10px;
+    border-left: 4px solid var(--gold-primary);
+    background: #fff9e6;
+    margin: 2rem 0;
+}
+
+.policy-alert h3 {
+    color: var(--gold-dark);
+    margin: 0 0 0.5rem 0;
+    font-size: 1.1rem;
+}
+
+.policy-alert p {
+    color: #665c3b;
+    margin: 0;
+    font-size: 0.95rem;
+}
+
+/* Step Wizard (for Returns) */
+.step-wizard {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.step-item {
+    display: flex;
+    gap: 1.5rem;
+    background: white;
+    padding: 1.5rem;
+    border-radius: 12px;
+    align-items: flex-start;
+    box-shadow: var(--shadow-soft);
+    border: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.step-number {
+    background: var(--gold-primary);
+    color: white;
+    width: 40px;
+    height: 40px;
+    min-width: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 1.1rem;
+}
+
+/* CTA Section */
+.policy-cta {
+    background: var(--gradient-gold);
+    color: white;
+    padding: 3rem 2rem;
+    border-radius: 20px;
+    text-align: center;
+    margin-top: 4rem;
+    box-shadow: 0 10px 30px rgba(212, 175, 55, 0.3);
+}
+
+.policy-cta h3 {
+    margin: 0 0 1rem 0;
+    font-size: 1.8rem;
+    color: white;
+}
+
+.policy-cta p {
+    color: rgba(255, 255, 255, 0.9);
+    margin-bottom: 2rem;
+    font-size: 1.1rem;
+}
+
+.btn-white {
+    background: white;
+    color: var(--gold-dark);
+    padding: 1rem 2.5rem;
+    text-decoration: none;
+    border-radius: 50px;
+    font-weight: 600;
+    transition: transform 0.2s;
+    display: inline-block;
+}
+
+.btn-white:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .policy-hero h1 {
+        font-size: 2rem;
+    }
+
+    .grid-2,
+    .grid-3,
+    .grid-4 {
+        grid-template-columns: 1fr;
+    }
+
+    .step-item {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .policy-content-wrapper {
+        margin-top: -20px;
+    }
+}

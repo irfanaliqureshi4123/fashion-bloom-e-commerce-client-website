@@ -1,0 +1,21 @@
+/* Base Styles - Reset and Typography */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+    overflow: hidden;
+}
+
+body {
+    background: linear-gradient(135deg, #f5f7fa 0%, #e8eef7 100%);
+    font-family: 'Poppins', sans-serif;
+    color: #1a1a1a;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}

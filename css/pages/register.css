@@ -1,0 +1,330 @@
+/* Register Page Styles - Simple Design (Like Login) */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(120deg, #ffffff 55%, #f8a1b6 100%);
+    font-family: "Segoe UI", Roboto, sans-serif;
+    padding: 20px;
+}
+
+.register-wrapper {
+    background: #ffffff;
+    width: 420px;
+    padding: 40px 35px;
+    border-radius: 18px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+    max-height: 95vh;
+    overflow-y: auto;
+}
+
+.register-wrapper h1 {
+    text-align: center;
+    color: #e91e63;
+    font-size: 32px;
+    margin-bottom: 30px;
+    margin-top: 0;
+    line-height: 1.3;
+    font-weight: 700;
+}
+
+.form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 6px;
+    font-weight: 500;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 14px 16px;
+    border-radius: 10px;
+    border: 1.5px solid #e91e63;
+    outline: none;
+    font-size: 15px;
+    transition: all 0.3s ease;
+    background: #ffffff;
+}
+
+.form-group input:focus {
+    border-color: #d81b60;
+    box-shadow: 0 0 0 3px rgba(233, 30, 99, 0.15);
+}
+
+.field-error {
+    color: #e74c3c;
+    font-size: 12px;
+    margin-top: 4px;
+    min-height: 14px;
+    font-weight: 500;
+}
+
+/* Password Eye Icon */
+.password-wrapper {
+    position: relative;
+}
+
+.password-wrapper input {
+    padding-right: 45px;
+    width: 100%;
+}
+
+.toggle-password {
+    position: absolute;
+    top: 50%;
+    right: 14px;
+    transform: translateY(-50%);
+    cursor: pointer;
+    font-size: 18px;
+    color: #e91e63;
+    user-select: none;
+    transition: color 0.2s ease;
+}
+
+.toggle-password:hover {
+    color: #d81b60;
+}
+
+/* Terms Agreement */
+.terms-agreement {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    margin: 20px 0 25px 0;
+    padding: 12px;
+    background: #f9f9f9;
+    border-radius: 8px;
+}
+
+.terms-agreement input[type="checkbox"] {
+    width: 18px;
+    height: 18px;
+    margin-top: 2px;
+    cursor: pointer;
+    accent-color: #e91e63;
+    flex-shrink: 0;
+}
+
+.terms-agreement label {
+    font-size: 13px;
+    color: #444;
+    cursor: pointer;
+    margin: 0;
+}
+
+.terms-agreement a {
+    color: #e91e63;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.terms-agreement a:hover {
+    text-decoration: underline;
+}
+
+.register-btn {
+    width: 100%;
+    padding: 14px;
+    border: none;
+    border-radius: 12px;
+    background: linear-gradient(90deg, #e91e63, #c2185b);
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    margin-top: 10px;
+}
+
+.register-btn:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 8px 20px rgba(233, 30, 99, 0.4);
+}
+
+.register-btn:active {
+    transform: translateY(0);
+}
+
+.login-text {
+    text-align: center;
+    margin-top: 18px;
+    font-size: 14px;
+    color: #444;
+}
+
+.login-text a {
+    color: #e91e63;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.login-text a:hover {
+    text-decoration: underline;
+}
+
+/* Auth Messages */
+.auth-message {
+    text-align: center;
+    margin-bottom: 20px;
+    padding: 14px 16px;
+    border-radius: 8px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    line-height: 1.5;
+    animation: slideDown 0.4s ease;
+}
+
+@keyframes slideDown {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.auth-message.error {
+    color: #c2185b;
+    background: #ffe6f0;
+    border: 1px solid rgba(233, 30, 99, 0.2);
+}
+
+.auth-message.success {
+    color: #2e7d32;
+    background: #c8e6c9;
+    border: 1px solid rgba(46, 125, 50, 0.2);
+}
+
+/* Responsive Design */
+
+@media (max-width: 768px) {
+    body {
+        padding: 40px 20px;
+    }
+
+    .register-wrapper {
+        max-width: 380px;
+        padding: 32px 24px;
+    }
+
+    .register-wrapper h1 {
+        font-size: 1.8rem;
+        margin-bottom: 24px;
+    }
+
+    .form-row {
+        gap: 12px;
+    }
+
+    .form-group input {
+        padding: 14px 16px;
+        font-size: 1rem;
+    }
+
+    .register-btn {
+        padding: 16px;
+        font-size: 1.1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        padding: 20px 16px;
+    }
+
+    .register-wrapper {
+        max-width: 100%;
+        padding: 28px 20px;
+        border-radius: 16px;
+    }
+
+    .register-wrapper h1 {
+        font-size: 1.6rem;
+        margin-bottom: 20px;
+    }
+
+    .form-row {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    .form-group label {
+        font-size: 0.9rem;
+        margin-bottom: 6px;
+    }
+
+    .form-group input {
+        padding: 12px 14px;
+        font-size: 0.95rem;
+    }
+
+    .register-btn {
+        padding: 14px;
+        font-size: 1rem;
+    }
+
+    .login-text {
+        margin-top: 16px;
+        font-size: 0.9rem;
+    }
+
+    .auth-message {
+        padding: 10px 14px;
+        font-size: 0.9rem;
+        margin-bottom: 16px;
+    }
+
+    .terms-agreement {
+        padding: 10px;
+        margin: 15px 0 20px 0;
+    }
+
+    .terms-agreement input[type="checkbox"] {
+        width: 16px;
+        height: 16px;
+    }
+
+    .terms-agreement label {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 360px) {
+    .register-wrapper {
+        padding: 24px 16px;
+    }
+
+    .register-wrapper h1 {
+        font-size: 1.4rem;
+    }
+
+    .form-group input {
+        padding: 10px 12px;
+    }
+
+    .register-btn {
+        padding: 12px;
+        font-size: 0.95rem;
+    }
+}
+

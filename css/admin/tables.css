@@ -1,0 +1,104 @@
+/* Table Styling */
+.data-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    border-radius: 14px;
+    overflow: hidden;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.06);
+    border: 1px solid rgba(255, 255, 255, 0.8);
+}
+
+.data-table thead {
+    background: linear-gradient(135deg, rgba(212, 175, 55, 0.1) 0%, rgba(212, 175, 55, 0.05) 100%);
+    border-bottom: 2px solid rgba(212, 175, 55, 0.2);
+}
+
+.data-table th {
+    padding: 16px 20px;
+    text-align: left;
+    font-weight: 700;
+    font-size: 0.9rem;
+    color: #d4af37;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.data-table td {
+    padding: 16px 20px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+    font-size: 0.9rem;
+    color: #1a1a1a;
+}
+
+.data-table tr:last-child td {
+    border-bottom: none;
+}
+
+.data-table tbody tr:hover {
+    background: rgba(212, 175, 55, 0.05);
+}
+
+.product-image {
+    width: 50px;
+    height: 50px;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+.table-actions {
+    display: flex;
+    gap: 6px;
+}
+
+.table-actions .btn {
+    font-size: 0.75rem;
+    padding: 5px 10px;
+}
+
+/* Status Badges */
+.status-badge {
+    display: inline-block;
+    padding: 6px 12px;
+    border-radius: 6px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.status-pending {
+    background: rgba(255, 193, 7, 0.2);
+    color: #f59e0b;
+}
+
+.status-processing {
+    background: rgba(33, 150, 243, 0.2);
+    color: #2196f3;
+}
+
+.status-shipped {
+    background: rgba(103, 58, 183, 0.2);
+    color: #673ab7;
+}
+
+.status-delivered {
+    background: rgba(76, 175, 80, 0.2);
+    color: #4caf50;
+}
+
+.status-cancelled {
+    background: rgba(244, 67, 54, 0.2);
+    color: #f44336;
+}
+
+.status-read {
+    background: rgba(76, 175, 80, 0.2);
+    color: #4caf50;
+}
+
+.status-unread {
+    background: rgba(255, 193, 7, 0.2);
+    color: #f59e0b;
+}

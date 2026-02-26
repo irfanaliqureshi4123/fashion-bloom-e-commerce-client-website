@@ -1,0 +1,311 @@
+/* Responsive Design - Small Mobile (600px and below) */
+@media (max-width: 600px) {
+    html {
+        overflow: hidden;
+    }
+
+    body {
+        height: 100vh;
+        overflow: hidden;
+    }
+
+    .admin-navbar {
+        height: 70px;
+    }
+
+    .navbar-container {
+        padding: 0 10px;
+        height: 70px;
+    }
+
+    .navbar-brand {
+        min-width: auto;
+        gap: 10px;
+    }
+
+    .admin-logo-image {
+        height: 32px;
+        max-width: 120px;
+    }
+
+    .navbar-title {
+        font-size: 0.9rem;
+    }
+
+    .navbar-right {
+        gap: 8px;
+    }
+
+    .navbar-user {
+        padding: 6px 10px;
+    }
+
+    .admin-wrapper {
+        height: calc(100vh - 70px);
+        margin-top: 70px;
+    }
+
+    .admin-sidebar {
+        top: 70px;
+        height: calc(100vh - 70px);
+    }
+
+    .admin-sidebar-overlay {
+        top: 70px !important;
+    }
+
+    .admin-main {
+        padding: 15px 8px;
+        margin-left: 0;
+        width: 100%;
+        height: calc(100vh - 70px);
+    }
+
+    .admin-page-title {
+        font-size: 1.2rem;
+        margin-bottom: 12px;
+    }
+
+    .stats-grid {
+        grid-template-columns: 1fr;
+        gap: 10px;
+        width: 100%;
+        overflow-x: hidden;
+    }
+
+    .stat-card {
+        padding: 12px 10px;
+    }
+
+    .stat-value {
+        font-size: 1.4rem;
+    }
+
+    .stat-label {
+        font-size: 0.7rem;
+    }
+
+    .section-title {
+        font-size: 1rem;
+    }
+
+    .btn {
+        font-size: 0.75rem;
+        padding: 6px 10px;
+    }
+
+    .table-actions .btn {
+        padding: 6px 8px;
+        font-size: 0.65rem;
+    }
+
+    .form-group label {
+        font-size: 0.8rem;
+    }
+
+    .form-group input,
+    .form-group textarea,
+    .form-group select {
+        padding: 8px 10px;
+        font-size: 0.85rem;
+    }
+
+    .modal-content {
+        max-height: 90vh;
+    }
+
+    .card-image {
+        height: 150px;
+    }
+
+    .product-filters {
+        padding: 15px;
+    }
+
+    .search-box input {
+        padding: 10px 12px 10px 36px;
+        font-size: 0.85rem;
+    }
+
+    .filter-group {
+        gap: 8px;
+    }
+
+    .filter-select {
+        padding: 8px 10px;
+        font-size: 0.8rem;
+    }
+
+    .data-table {
+        font-size: 0.8rem;
+    }
+
+    .data-table th,
+    .data-table td {
+        padding: 10px 8px;
+    }
+}
+
+/* Extra Small Mobile (480px and below) */
+@media (max-width: 480px) {
+    .admin-main {
+        padding: 10px 6px;
+    }
+
+    .admin-page-title {
+        font-size: 1rem;
+        margin-bottom: 10px;
+    }
+
+    .stat-card {
+        padding: 10px 8px;
+    }
+
+    .stat-value {
+        font-size: 1.3rem;
+    }
+
+    .stat-icon {
+        width: 35px;
+        height: 35px;
+        font-size: 1.2rem;
+    }
+
+    .stat-label {
+        font-size: 0.65rem;
+    }
+
+    .section-title {
+        font-size: 0.95rem;
+        margin-bottom: 10px;
+    }
+
+    .btn {
+        font-size: 0.7rem;
+        padding: 5px 8px;
+    }
+
+    .table-actions {
+        gap: 4px;
+    }
+
+    .table-actions .btn {
+        padding: 5px 6px;
+        font-size: 0.6rem;
+    }
+
+    .data-table {
+        font-size: 0.75rem;
+    }
+
+    .data-table th,
+    .data-table td {
+        padding: 8px 6px;
+    }
+
+    .card-title {
+        font-size: 0.95rem;
+    }
+
+    .card-body {
+        padding: 15px;
+    }
+
+    .form-group input,
+    .form-group textarea,
+    .form-group select {
+        padding: 8px 10px;
+        font-size: 0.8rem;
+    }
+
+    .modal-content {
+        width: 95%;
+    }
+
+    .modal-body {
+        padding: 16px;
+    }
+
+    .modal-header {
+        padding: 16px;
+    }
+
+    .search-box input {
+        padding: 8px 10px 8px 32px;
+        font-size: 0.8rem;
+    }
+
+    .filter-select {
+        width: 100%;
+        padding: 8px 10px;
+        font-size: 0.75rem;
+    }
+
+    .navbar-container {
+        padding: 0 8px;
+    }
+
+    .navbar-title {
+        display: none;
+    }
+
+    .admin-logo-image {
+        height: 28px;
+        max-width: 100px;
+    }
+}
+        padding: 4px 6px;
+        font-size: 0.6rem;
+    }
+
+    .form-group {
+        margin-bottom: 10px;
+    }
+
+    .form-group label {
+        font-size: 0.75rem;
+    }
+
+    .form-group input,
+    .form-group textarea,
+    .form-group select {
+        padding: 6px 8px;
+        font-size: 0.8rem;
+    }
+
+    .data-table td {
+        padding: 8px 6px;
+    }
+
+    .data-table td:before {
+        font-size: 0.65rem;
+    }
+
+    .modal-header {
+        padding: 12px;
+    }
+
+    .modal-body {
+        padding: 12px;
+    }
+
+    .modal-header h3 {
+        font-size: 1rem;
+    }
+
+    .card {
+        border-radius: 8px;
+    }
+
+    .card-image {
+        height: 120px;
+    }
+
+    .card-title {
+        font-size: 0.9rem;
+    }
+
+    .card-price {
+        font-size: 0.8rem;
+    }
+}

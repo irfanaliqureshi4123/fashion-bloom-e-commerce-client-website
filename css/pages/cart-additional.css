@@ -1,0 +1,41 @@
+/**
+ * Shopping Cart Page - Additional Styles
+ * Styles for cart back button and main container
+ */
+
+/* Cart Back Button */
+.cart-back-button {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 12px 24px;
+    background: rgba(212, 175, 55, 0.1);
+    color: #d4af37;
+    border: 1px solid #d4af37;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s;
+    cursor: pointer;
+    font-size: 0.95rem;
+    margin-bottom: 30px;
+    display: inline-flex;
+}
+
+/* Back Button Hover State */
+.cart-back-button:hover {
+    background: #d4af37;
+    color: #fff;
+    transform: translateX(-5px);
+    box-shadow: 0 4px 12px rgba(212, 175, 55, 0.2);
+}
+
+/* Mobile Responsive - Back Button */
+@media (max-width: 768px) {
+    .cart-back-button {
+        width: 100%;
+        justify-content: center;
+        padding: 12px 20px;
+        font-size: 0.9rem;
+    }
+}

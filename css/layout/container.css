@@ -1,0 +1,91 @@
+/* Container and Grid Layouts */
+
+/* Main Container - Centers content with max width */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* Large Container - For wider layouts */
+.container-lg {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 20px;
+    width: 100%;
+}
+
+/* Small Container - For narrower layouts */
+.container-sm {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0 20px;
+    width: 100%;
+}
+
+/* Section Spacing - Standard section padding */
+.section {
+    padding: 80px 0;
+    width: 100%;
+}
+
+/* Responsive Container - Tablet adjustments */
+@media (max-width: 1200px) {
+    .container {
+        max-width: 960px;
+        padding: 0 15px; /* Reduce padding on smaller screens */
+    }
+
+    .container-lg {
+        max-width: 1000px;
+        padding: 0 15px;
+    }
+}
+
+/* Responsive Container - Large tablet */
+@media (max-width: 1024px) {
+    .container {
+        max-width: 900px;
+        padding: 0 15px;
+    }
+
+    .section {
+        padding: 60px 0; /* Reduce section padding */
+    }
+}
+
+/* Responsive Container - Tablet */
+@media (max-width: 768px) {
+    .container {
+        max-width: 100%; /* Full width on tablets */
+        padding: 0 15px;
+    }
+
+    .section {
+        padding: 40px 0; /* Further reduce padding */
+    }
+}
+
+/* Responsive Container - Mobile */
+@media (max-width: 480px) {
+    .container {
+        padding: 0 10px; /* Minimal padding on mobile */
+    }
+
+    .section {
+        padding: 30px 0; /* Compact sections */
+    }
+
+    .section-title {
+        font-size: 1.3rem; /* Small mobile title */
+    }
+}
+
+/* Responsive Container - Small mobile */
+@media (max-width: 360px) {
+    .container {
+        padding: 0 8px; /* Very minimal padding */
+    }
+}

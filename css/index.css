@@ -1,0 +1,49 @@
+/* Main CSS Index - Imports all modular CSS files */
+
+/* ================================
+   BASE STYLES
+   ================================ */
+@import url('./base/variables.css');
+@import url('./base/reset.css');
+@import url('./base/typography.css');
+
+/* ================================
+   LAYOUT
+   ================================ */
+@import url('./layout/container.css');
+@import url('./layout/header.css');
+@import url('./layout/navigation.css');
+@import url('./layout/footer.css');
+
+/* ================================
+   COMPONENTS
+   ================================ */
+@import url('./components/buttons.css');
+@import url('./components/cards.css');
+@import url('./components/forms.css');
+
+/* ================================
+   PAGES
+   ================================ */
+@import url('./pages/hero.css');
+@import url('./pages/products.css');
+@import url('./pages/checkout.css');
+@import url('./pages/wishlist.css');
+@import url('./pages/reviews.css');
+/* Note: Page-specific styles like register.css, login.css should be loaded only on their respective pages */
+
+/* ================================
+   UTILITIES
+   ================================ */
+@import url('./utilities/spacing.css');
+@import url('./utilities/display.css');
+@import url('./utilities/colors.css');
+@import url('./utilities/text.css');
+@import url('./utilities/shadows.css');
+
+/* ================================
+   LEGACY STYLES (To be migrated)
+   Keep existing styles not yet migrated
+   ================================ */
+
+/* Keep existing styles from original files that haven't been modularized yet */

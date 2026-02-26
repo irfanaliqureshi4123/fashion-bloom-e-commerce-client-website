@@ -1,0 +1,97 @@
+/* CSS Variables and Theme Configuration */
+:root {
+    /* Primary Colors - Pink/Magenta Theme */
+    --primary-color: #d4af37;
+    --primary-light: #e0a03a;
+    --primary-dark: #b8941f;
+    
+    /* Accent Colors - Pink */
+    --accent-pink: #e91e63;
+    --accent-pink-light: #f06292;
+    --accent-pink-dark: #c2185b;
+    
+    /* Secondary Colors */
+    --secondary-color: #1a1a1a;
+    --secondary-light: #2d2d2d;
+    
+    /* Background Colors */
+    --bg-light: #f8f8f8;
+    --bg-lighter: #fafafa;
+    --accent-color: #fef5e7; /* Light golden accent for backgrounds */
+    
+    /* Text Colors */
+    --text-primary: #1a1a1a;
+    --text-secondary: #555;
+    --text-light: #999;
+    --white: #ffffff;
+    
+    /* Border & Divider */
+    --border-color: #e0e0e0;
+    --border-light: #f0f0f0;
+    
+    /* Status Colors */
+    --error-color: #ff6b6b;
+    --success-color: #51cf66;
+    --warning-color: #ffd43b;
+    --info-color: #339af0;
+    
+    /* Gradients */
+    --gradient-primary: linear-gradient(135deg, #d4af37, #e0a03a);
+    --gradient-pink: linear-gradient(135deg, #e91e63, #c2185b);
+    --gradient-dark: linear-gradient(135deg, #1a1a1a, #2d2d2d);
+    --gradient-hero: linear-gradient(135deg, #fff5f8 0%, #ffe4f0 100%);
+    --gradient-subtle: linear-gradient(135deg, rgba(233, 30, 99, 0.1), rgba(233, 30, 99, 0.05));
+
+    /* Shadows - Enhanced */
+    --shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.06);
+    --shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    --shadow-md: 0 8px 20px rgba(0, 0, 0, 0.1);
+    --shadow-hover: 0 12px 35px rgba(233, 30, 99, 0.15);
+    --shadow-deep: 0 16px 48px rgba(0, 0, 0, 0.12);
+    
+    /* Transitions */
+    --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-fast: all 0.15s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-slow: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+
+    /* Spacing */
+    --spacing-xs: 0.25rem;
+    --spacing-sm: 0.5rem;
+    --spacing-md: 1rem;
+    --spacing-lg: 1.5rem;
+    --spacing-xl: 2rem;
+    --spacing-xxl: 3rem;
+    --spacing-3xl: 4rem;
+
+    /* Border Radius */
+    --border-radius: 8px;
+    --border-radius-lg: 12px;
+    --border-radius-xl: 16px;
+    --border-radius-sm: 4px;
+    --border-radius-full: 50%;
+
+    /* Typography */
+    --font-family: 'Poppins', sans-serif;
+    --font-size-xs: 0.75rem;
+    --font-size-sm: 0.875rem;
+    --font-size-base: 1rem;
+    --font-size-lg: 1.125rem;
+    --font-size-xl: 1.25rem;
+    --font-size-2xl: 1.5rem;
+    --font-size-3xl: 2rem;
+    --font-size-4xl: 2.5rem;
+    
+    /* Font Weights */
+    --fw-light: 300;
+    --fw-normal: 400;
+    --fw-medium: 500;
+    --fw-semibold: 600;
+    --fw-bold: 700;
+
+    /* Breakpoints */
+    --breakpoint-sm: 480px;
+    --breakpoint-md: 768px;
+    --breakpoint-lg: 1024px;
+    --breakpoint-xl: 1200px;
+    --breakpoint-2xl: 1440px;
+}
